@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificate Showcase</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    .certificate-card {
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .certificate-card:hover {
+      transform: scale(1.05);
+    }
+
+    .certificate-title {
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+    <h1 class="text-center mb-5">My Certificates</h1>
+    <div class="row g-4">
+      <!-- Certificate 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card certificate-card text-center p-4">
+          <h5 class="certificate-title mb-3">
+            Full-Stack Development Internship
+          </h5>
+          <p class="text-muted mb-3">Issued by: XYZ Company</p>
+          <button
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#certificateModal1"
+          >
+            View Certificate
+          </button>
+        </div>
+      </div>
+
+      <!-- Certificate 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card certificate-card text-center p-4">
+          <h5 class="certificate-title mb-3">
+            Web Design Basics
+          </h5>
+          <p class="text-muted mb-3">Issued by: ABC Institute</p>
+          <button
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#certificateModal2"
+          >
+            View Certificate
+          </button>
+        </div>
+      </div>
+
+      <!-- Certificate 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card certificate-card text-center p-4">
+          <h5 class="certificate-title mb-3">
+            Problem Solving Workshop
+          </h5>
+          <p class="text-muted mb-3">Issued by: PQR Organization</p>
+          <button
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#certificateModal3"
+          >
+            View Certificate
+          </button>
+        </div>
+      </div>
+
+      <!-- Certificate 4 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card certificate-card text-center p-4">
+          <h5 class="certificate-title mb-3">
+            Advanced JavaScript
+          </h5>
+          <p class="text-muted mb-3">Issued by: LMN Academy</p>
+          <button
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#certificateModal4"
+          >
+            View Certificate
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modals for Certificates -->
+  <!-- Modal 1 -->
+  <div
+    class="modal fade"
+    id="certificateModal1"
+    tabindex="-1"
+    aria-labelledby="certificateModalLabel1"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="certificateModalLabel1">
+            Full-Stack Development Internship
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body text-center">
+          <img
+            src="certificate1.jpg"
+            alt="Full Certificate 1"
+            class="img-fluid rounded"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div
+    class="modal fade"
+    id="certificateModal2"
+    tabindex="-1"
+    aria-labelledby="certificateModalLabel2"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="certificateModalLabel2">
+            Web Design Basics
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body text-center">
+          <img
+            src="certificate2.jpg"
+            alt="Full Certificate 2"
+            class="img-fluid rounded"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div
+    class="modal fade"
+    id="certificateModal3"
+    tabindex="-1"
+    aria-labelledby="certificateModalLabel3"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="certificateModalLabel3">
+            Problem Solving Workshop
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body text-center">
+          <img
+            src="certificate3.jpg"
+            alt="Full Certificate 3"
+            class="img-fluid rounded"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div
+    class="modal fade"
+    id="certificateModal4"
+    tabindex="-1"
+    aria-labelledby="certificateModalLabel4"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="certificateModalLabel4">
+            Advanced JavaScript
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body text-center">
+          <img
+            src="certificate4.jpg"
+            alt="Full Certificate 4"
+            class="img-fluid rounded"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

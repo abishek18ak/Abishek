@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Data Example</title>
+</head>
+<body>
+  <h1>Todo Item</h1>
+  <div id="todo"></div>
+
+  <script>
+    const apiUrl = 'https://jsonplaceholder.typicode.com/todos/1';
+
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+        // Display the data on the webpage
+        const todoElement = document.getElementById('todo');
+        todoElement.innerHTML = `
+          <p><strong>Title:</strong> ${data.title}</p>
+          <p><strong>Completed:</strong> ${data.completed ? 'Yes' : 'No'}</p>
+        `;
+      })
+      .catch(error => console.error('Error:', error));
+  </script>
+</body>
+</html>
